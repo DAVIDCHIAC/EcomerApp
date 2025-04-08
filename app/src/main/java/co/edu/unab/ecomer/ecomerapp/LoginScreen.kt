@@ -30,11 +30,12 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.navigation.NavController
 import co.edu.unab.ecomer.ecomerapp.ui.theme.EcomerAppTheme
 
 
 @Composable
-fun LoginScren() {
+fun LoginScren(navController: NavController?= null) {
 
     Scaffold { valuesPaddin ->
         Column(
@@ -112,7 +113,12 @@ fun LoginScren() {
             }
             Spacer(modifier = Modifier.height(24.dp))
 
-            TextButton(onClick = {}) {
+            TextButton(onClick = {
+                if (navController != null) {
+                    navController.navigate("register")
+                }
+
+            }) {
                 Text(text = "¿No tienes una cuenta? Registrate", color = Color(0xFFFF9900))
             }
 
