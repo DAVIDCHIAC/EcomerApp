@@ -35,7 +35,7 @@ import co.edu.unab.ecomer.ecomerapp.ui.theme.EcomerAppTheme
 
 
 @Composable
-fun LoginScren(navController: NavController?= null) {
+fun LoginScren(navController: NavController?) {
 
     Scaffold { valuesPaddin ->
         Column(
@@ -100,7 +100,10 @@ fun LoginScren(navController: NavController?= null) {
             )
             Spacer(modifier = Modifier.height(24.dp))
 
-            Button(onClick = {},
+            Button(onClick = {
+                navController.navigate("Home")
+
+            },
                 modifier = Modifier.fillMaxWidth(),
                 colors = ButtonDefaults.buttonColors(
                     containerColor = Color(0xFFFF9900)
@@ -133,7 +136,7 @@ fun LoginScren(navController: NavController?= null) {
 @Composable
 fun LoginScreenPreview() {
     EcomerAppTheme {
-        LoginScren()
+
     }
 
 
