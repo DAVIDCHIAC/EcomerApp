@@ -61,4 +61,6 @@ dependencies {
 
     //Navegacion - entre screen
     implementation(libs.androidx.navigation.compose)
+    implementation(libs.coil.compose)
+    implementation(libs.coil.network.okhttp)
 }
