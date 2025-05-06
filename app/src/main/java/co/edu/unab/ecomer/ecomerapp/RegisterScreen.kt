@@ -34,7 +34,8 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import androidx.navigation.compose.rememberNavController
-import co.edu.unab.ecomer.ecomerapp.ui.theme.EcomerAppTheme
+import co.edu.unab.ecomer.ecomerapp.RegistreScreen
+
 import androidx.compose.ui.tooling.preview.Preview as Preview
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -183,6 +184,13 @@ fun RegistreScreen(navController: NavController) {
 @Composable
 fun RegisterScreenPreview() {
     EcomerAppTheme {
-        //RegistreScreen()
+        RegistreScreen(
+            navController = TODO()
+        )
     }
+}
+
+@Composable
+fun EcomerAppTheme(content: @Composable () -> Unit) {
+    TODO("Not yet implemented")
 }

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1057646362978",
+    "project_id": "loginecomer",
+    "storage_bucket": "loginecomer.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1057646362978:android:aa2fdd1b954f2b1facac3b",
+        "android_client_info": {
+          "package_name": "co.edu.unab.ecomer.ecomerapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqlepN1lXL7phrDX475lNyCNhVhopfCq4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
